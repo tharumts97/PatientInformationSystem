@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Profile from './pages/profile';
 import BasicHealth from './pages/basicHealth';
+import ProfilePic from './pages/profilePic';
 
 export default class Routs extends Component {
     render (){
@@ -16,6 +17,7 @@ export default class Routs extends Component {
                 <Scene key="signup" component={Register} title="Register"/>
                 <Scene key="profile" component={Profile} title="Profile"/>
                 <Scene key="bhealth" component={BasicHealth} title="BasicHealth"/>
+                <Scene key="propic" component={ProfilePic} title="ProfilePic"/>
                 </Stack>
             </Router>
         )

@@ -36,6 +36,17 @@ export default StyleSheet.create({
         marginTop:5,
         marginBottom:5
       },
+
+      nextButton:{
+        padding:15,
+        backgroundColor: '#76B0C6',
+        borderRadius:100,
+        width:'18%',
+        alignItems:'flex-start',
+        marginLeft:100,
+        marginTop:5,
+        marginBottom:5
+      },
       signupTxt:{
           fontSize:14
       },
@@ -60,12 +71,22 @@ export default StyleSheet.create({
       },
 
       pbar: {
-          color: '#6FB8F7'
+          color: '#6FB8F7',
       },
 
       commt:{
         justifyContent:'center',
         flexDirection: 'column',
+      },
+
+      progBar:{
+          flex:2,
+          marginTop:10,
+          flexGrow:1,
+      },
+
+      form:{
+          marginTop:5
       }
 
 

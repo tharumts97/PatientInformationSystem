@@ -11,12 +11,9 @@ import { View ,
 
 import style from '../components/style'
 
-import HealthForm from '../components/healthInfoForm'
+import ProfileForm from '../components/proPicForm'
 
-export default class BasicHealth extends Component {
-    bhealth() {
-        Actions.bhealth()
-    }
+export default class ProfilePic extends Component {
 
     render() {
         const { parent,signupTxtCont,signupTxt,signupButton,pbar, progBar,form } = style
@@ -28,15 +25,18 @@ export default class BasicHealth extends Component {
                         style={pbar}
                      styleAttr="Horizontal"
                         indeterminate={false}
-                        progress={0.33}
+                        progress={0.66}
             />
             </View>
             <View style={form}>
-            <HealthForm type="HealthForm"/>    
-            </View>   
+            <ProfileForm type="ProfileForm"/>    
+            </View> 
+              
+            <View>   
                 <ScrollView>
                 
                 </ScrollView>  
+            </View>
             </View>
 
         )

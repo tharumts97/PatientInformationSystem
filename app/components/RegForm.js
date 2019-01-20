@@ -63,7 +63,7 @@ export default class RegForm extends Component {
     render () {
         const data = this.state.apiData;
         
-        const { input, parent,loginTxt,buttonStyle,signupTxt } = style
+        const { input, parent,loginTxt,buttonStyle,signupTxt,nextButton } = style
         return (
             <View style={parent}>
                 <Text style={loginTxt}>Enter Basic Information </Text>
@@ -104,10 +104,10 @@ export default class RegForm extends Component {
                     value= {this.mobile}
                 />
 
-                <TouchableOpacity
+               {/*<TouchableOpacity
                     style={buttonStyle} onPress= {this.profile}>
                     <Text> View Profile </Text>
-                </TouchableOpacity>
+               </TouchableOpacity>*/}
 
                 <View>
                     <TouchableOpacity
@@ -116,7 +116,7 @@ export default class RegForm extends Component {
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        style={buttonStyle} onPress = {this.bhealth}>
+                        style={nextButton} onPress = {this.bhealth}>
                         <Text> Next </Text>
                     </TouchableOpacity>
 
